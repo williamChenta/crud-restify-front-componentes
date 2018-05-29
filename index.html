@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crud Vue - Restify</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <header-comp></header-comp>
+        <menu-comp></menu-comp>
+
+        <div id="appFrm">
+            <cademp-comp></cademp-comp>
+        </div>
+    </div>
+
+    <script src="./componentes/header.js"></script>
+    <script src="./componentes/menu.js"></script>
+    <script src="./componentes/cadEmployee.js"></script>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Olá Vue!'
+            }
+        })
+    </script>
+</body>
+
+</html>
